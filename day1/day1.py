@@ -1,3 +1,6 @@
+from typing import Tuple
+
+
 numbers = [
     'zero',
     'one',
@@ -11,12 +14,12 @@ numbers = [
     'nine'
 ]
 
-def replace_word(line: str):
+def replace_word(line: str) -> str:
     for digit, word in enumerate(numbers):
         line = line.replace(word, f'{word}{digit}{word}')
     return line
 
-def day1(lines: list[str]):
+def day1(lines: list[str]) -> Tuple[int, int]:
     totalAmount1 = 0
 
     for line in lines:

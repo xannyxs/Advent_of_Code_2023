@@ -1,8 +1,9 @@
+from typing import Tuple
 from day1.day1 import day1
-from utils.read_file import read_file  # type: ignore
+from utils.read_file import read_file
 
 
-def print_solution(day: str, solution):
+def print_solution(day: str, solution: Tuple[int, int]) -> None:
     print(day)
     print("Solution 1:", solution[0])
     print("Solution 2:", solution[1])
