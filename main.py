@@ -3,6 +3,7 @@ from day1.day1 import day1
 from day2.day2 import day2
 from day3.day3 import day3
 from day4.day4 import day4
+from day5.day5 import day5
 from utils.read_file import read_file
 
 
@@ -25,3 +26,6 @@ if __name__ == "__main__":
 
     lines = read_file('day4/input.txt')
     print_solution('Day 4:', day4(lines))
+
+    lines = read_file('day5/input.txt')
+    print_solution('Day 5:', day5(lines))
